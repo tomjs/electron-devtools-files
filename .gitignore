@@ -56,3 +56,5 @@ tsconfig.tsbuildinfo
 # build output
 build
 dist
+/extensions/**
+!/extensions/collections.json
