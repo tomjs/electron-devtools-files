@@ -2,7 +2,7 @@ name: release
 run-name: release and publish
 on:
   schedule:
-    - cron: '15,45 0-23 * * *'
+    - cron: '30 0,6,12,18 * * *'
 
 jobs:
   release:
