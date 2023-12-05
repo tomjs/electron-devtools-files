@@ -1,3 +1,4 @@
+import fs from 'node:fs';
 import path from 'node:path';
 import shell from 'shelljs';
 import { simpleGit } from 'simple-git';
@@ -93,7 +94,7 @@ async function run() {
   // publish
   const result = shell.exec(`npm publish`);
   if (result.code !== 0) {
-    throw new Error(result.stderr);
+    return;
   }
 
   // patch version +1
@@ -104,8 +105,10 @@ async function run() {
   await git.add('.');
   await git.commit(getGitMessage());
   await git.tag([`v${pkg.version}`]);
-  await git.push(['--all']);
-  await git.push(['--tags']);
+
+  if (process.env.GITHUB_ENV) {
+    fs.appendFileSync(process.env.GITHUB_ENV, 'ELECTRON_EXTENSION_RELEASE=1', 'utf8');
+  }
 }
 
 run()
