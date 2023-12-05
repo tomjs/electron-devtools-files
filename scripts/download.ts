@@ -1,6 +1,16 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { downloadChromeExtension, EXTENSION_PATH, IExtension, readJson, writeJson } from './utils';
+import {
+  CACHE_COLLECTION_PATH,
+  CACHE_PATH,
+  COLLECTION_PATH,
+  downloadChromeExtension,
+  EXTENSION_PATH,
+  IExtension,
+  mkdirp,
+  readJson,
+  writeJson,
+} from './utils';
 
 const extensionIds = [
   // Angular Devtools
@@ -24,8 +34,12 @@ const extensionIds = [
 ];
 
 async function download() {
-  const collectionsPath = path.join(EXTENSION_PATH, 'collections.json');
-  const collections: IExtension[] = readJson(collectionsPath) || [];
+  const collections: IExtension[] = readJson(COLLECTION_PATH) || [];
+
+  mkdirp(CACHE_PATH);
+  if (fs.existsSync(COLLECTION_PATH)) {
+    fs.copyFileSync(COLLECTION_PATH, path.join(CACHE_COLLECTION_PATH));
+  }
 
   for (let i = 0; i < extensionIds.length; i++) {
     const id = extensionIds[i];
@@ -53,7 +67,7 @@ async function download() {
     fs.rmSync(path.join(EXTENSION_PATH, id), { recursive: true, force: true });
   }
 
-  writeJson(collectionsPath, collections);
+  writeJson(COLLECTION_PATH, collections);
 }
 
 download()

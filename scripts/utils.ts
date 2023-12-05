@@ -8,6 +8,14 @@ export const ROOT = path.join(__dirname, '../');
 
 export const EXTENSION_PATH = path.join(ROOT, 'extensions');
 
+export const COLLECTION_NAME = 'collections.json';
+
+export const COLLECTION_PATH = path.join(EXTENSION_PATH, COLLECTION_NAME);
+
+export const CACHE_PATH = path.join(ROOT, 'node_modules', '.cache');
+
+export const CACHE_COLLECTION_PATH = path.join(CACHE_PATH, COLLECTION_NAME);
+
 export interface IExtension {
   id: string;
   name: string;

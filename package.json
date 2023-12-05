@@ -1,6 +1,6 @@
 {
   "name": "@tomjs/electron-devtools-files",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Chrome devtools files for Electron",
   "keywords": [
     "electron",
@@ -30,9 +30,10 @@
     "extensions/collections.json",
     "index.js"
   ],
-  "main": "./dist/index.js",
+  "main": "index.js",
   "scripts": {
     "download": "node -r dotenv-flow/config --require tsx/cjs ./scripts/download.ts",
+    "release": "tsx ./scripts/release.ts",
     "lint": "run-s lint:eslint lint:prettier",
     "lint:eslint": "eslint \"scripts/**/*.ts\" *.{js,cjs,ts} --fix --cache",
     "lint:prettier": "prettier --write .",
@@ -58,6 +59,7 @@
     "prettier": "^3.1.0",
     "rimraf": "^5.0.5",
     "shelljs": "^0.8.5",
+    "simple-git": "^3.21.0",
     "tsx": "^4.6.2",
     "typescript": "~5.2.2"
   }
