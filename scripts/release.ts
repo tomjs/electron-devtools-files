@@ -91,16 +91,16 @@ async function run() {
     return;
   }
 
+  // patch version +1
+  const pkg = readJson(path.join(ROOT, 'package.json'));
+  pkg.version = patchVersion(pkg.version);
+  writeJson(path.join(ROOT, 'package.json'), pkg);
+
   // publish
   const result = shell.exec(`npm publish`);
   if (result.code !== 0) {
     return;
   }
-
-  // patch version +1
-  const pkg = readJson(path.join(ROOT, 'package.json'));
-  pkg.version = patchVersion(pkg.version);
-  writeJson(path.join(ROOT, 'package.json'), pkg);
 
   await git.add('.');
   await git.commit(getGitMessage());
