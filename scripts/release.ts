@@ -86,7 +86,7 @@ async function run() {
 
   // console.log('status:', status);
 
-  if (!Array.isArray(status.modified) || !status.modified.includes(COLLECTION_NAME)) {
+  if (!Array.isArray(status.modified) || !status.modified.find(s => s.includes(COLLECTION_NAME))) {
     console.log('No new version of the extensions can be updated');
     return;
   }
