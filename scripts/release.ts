@@ -59,24 +59,19 @@ function getGitMessage() {
     }
   });
 
-  const changes: string[] = [];
   const messages: string[] = [];
 
   if (addList.length) {
-    changes.push(`add ${addList.length}`);
     messages.push(`Add:\n${addList.join('\n')}`);
   }
   if (updateList.length) {
-    changes.push(`update ${updateList.length}`);
     messages.push(`Update:\n${updateList.join('\n')}`);
   }
   if (removeList.length) {
-    changes.push(`remove ${removeList.length}`);
     messages.push(`Remove:\n${removeList.join('\n')}`);
   }
 
-  const header = !changes.length ? 'No Extension Change' : `Extensions ${changes.join(' ')}\n\n`;
-  return `chore: release v${pkg.version}, ${header}` + messages.join('\n');
+  return `chore: release v${pkg.version}\n\n` + messages.join('\n');
 }
 
 async function run() {
