@@ -2,7 +2,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import shell from 'shelljs';
 import { simpleGit } from 'simple-git';
-import pkg from '../package.json';
 import {
   CACHE_COLLECTION_PATH,
   COLLECTION_NAME,
@@ -33,7 +32,7 @@ function arrayToObject(arr: IExtension[]): Record<string, IExtension> {
   return obj;
 }
 
-function getGitMessage() {
+function getGitMessage(pkg) {
   const lastCollections: IExtension[] = readJson(CACHE_COLLECTION_PATH) || [];
   const collections: IExtension[] = readJson(COLLECTION_PATH) || [];
 
@@ -98,7 +97,7 @@ async function run() {
   }
 
   await git.add('.');
-  await git.commit(getGitMessage());
+  await git.commit(getGitMessage(pkg));
   await git.tag([`v${pkg.version}`]);
 
   if (process.env.GITHUB_ENV) {
