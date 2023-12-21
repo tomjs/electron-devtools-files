@@ -1,10 +1,10 @@
 # @tomjs/electron-devtools-files
 
-![npm](https://img.shields.io/npm/v/@tomjs/electron-devtools-files) ![node-current (scoped)](https://img.shields.io/node/v/@tomjs/electron-devtools-files) ![NPM](https://img.shields.io/npm/l/@tomjs/electron-devtools-files) ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/tomgao365/electron-devtools-files/release.yml)
+![npm](https://img.shields.io/npm/v/@tomjs/electron-devtools-files) ![node-current (scoped)](https://img.shields.io/node/v/@tomjs/electron-devtools-files) ![NPM](https://img.shields.io/npm/l/@tomjs/electron-devtools-files) ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/tomjs/electron-devtools-files/release.yml)
 
 **English** | [中文](./README.zh_CN.md)
 
-> Provide some frequently used Chrome developer extension (\* .crx) files for [@tomjs/electron-devtools-installer](https://github.com/tomgao365/electron-devtools-installer)
+> Provide some frequently used Chrome developer extension (\* .crx) files for [@tomjs/electron-devtools-installer](https://github.com/tomjs/electron-devtools-installer)
 
 ## Chrome Extensions
 
