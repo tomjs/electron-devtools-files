@@ -20,7 +20,8 @@ jobs:
           node-version: 20
           cache: 'pnpm'
           registry-url: 'https://registry.npmjs.org'
-      - run: corepack enable
+
+      - uses: pnpm/action-setup@v4
 
       - name: Set git config
         run: |
