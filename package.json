@@ -1,6 +1,6 @@
 {
   "name": "@tomjs/electron-devtools-files",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Chrome devtools files for Electron",
   "keywords": [
     "electron",
@@ -48,6 +48,7 @@
     "@tomjs/unzip-crx": "^1.0.6",
     "@types/download": "^8.0.5",
     "@types/node": "^18.19.3",
+    "@types/semver": "^7.5.8",
     "@types/shelljs": "^0.8.15",
     "dotenv-flow": "^4.0.1",
     "download": "^8.0.0",
@@ -63,5 +64,8 @@
     "tsx": "^4.7.0",
     "typescript": "~5.3.3"
   },
-  "packageManager": "pnpm@9.1.1"
+  "packageManager": "pnpm@9.1.1",
+  "dependencies": {
+    "semver": "^7.6.2"
+  }
 }

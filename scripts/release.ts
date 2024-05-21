@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import semver from 'semver';
 import shell from 'shelljs';
 import { simpleGit } from 'simple-git';
 import {
@@ -11,14 +12,6 @@ import {
   ROOT,
   writeJson,
 } from './utils';
-
-// patch version number +1
-function patchVersion(version: string) {
-  const versions = version.split('.');
-  const i = versions.length - 1;
-  versions[i] = `${Number(versions[i]) + 1}`;
-  return versions.join('.');
-}
 
 function arrayToObject(arr: IExtension[]): Record<string, IExtension> {
   if (!Array.isArray(arr)) {
@@ -87,7 +80,8 @@ async function run() {
 
   // patch version +1
   const pkg = readJson(path.join(ROOT, 'package.json'));
-  pkg.version = patchVersion(pkg.version);
+  const sv = semver.parse(pkg.version)!;
+  pkg.version = sv.inc('patch').version;
   writeJson(path.join(ROOT, 'package.json'), pkg);
 
   // publish
