@@ -1,6 +1,6 @@
 {
   "name": "@tomjs/electron-devtools-files",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Chrome devtools files for Electron",
   "keywords": [
     "electron",
