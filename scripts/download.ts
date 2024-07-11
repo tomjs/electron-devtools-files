@@ -31,6 +31,8 @@ const extensionIds = [
   'fmkadmapgofadopljbjfkapdkoienihi',
   // Vue.js Devtools
   'nhdogjmejiglipccpnnnanhbledajbpd',
+  // Vue.js Devtools (beta)
+  'ljjemllljcmogpfapbkkighbhhppjdbg',
 ];
 
 async function download() {
