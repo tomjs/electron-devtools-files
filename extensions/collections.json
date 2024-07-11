@@ -57,5 +57,11 @@
     "name": "Vue.js devtools",
     "version": "6.6.3",
     "manifest_version": 3
+  },
+  {
+    "id": "ljjemllljcmogpfapbkkighbhhppjdbg",
+    "name": "Vue.js devtools (beta)",
+    "version": "7.0.0.3",
+    "manifest_version": 3
   }
 ]
