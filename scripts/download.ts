@@ -25,14 +25,20 @@ const extensionIds = [
   'dbhhnnnpaeobfddmlalhnehgclcmjimi',
   // MobX Devtools
   'pfgnfdagidkfgccljigdamigbcnndkod',
-  // Redux Devtools
-  'lmhkpmbekcpmknklioeibfkpmmfibljd',
+  // Preact Developer Devtools
+  'ilcajpmogmhpliinlbcdebhbcanbghmd',
   // React Developer Devtools
   'fmkadmapgofadopljbjfkapdkoienihi',
+  // Redux Devtools
+  'lmhkpmbekcpmknklioeibfkpmmfibljd',
   // Vue.js Devtools
   'nhdogjmejiglipccpnnnanhbledajbpd',
   // Vue.js Devtools (beta)
   'ljjemllljcmogpfapbkkighbhhppjdbg',
+  // Vue.js Devtools (v5)
+  'hkddcnbhifppgmfgflgaelippbigjpjo',
+  // Vue.js Devtools (v6)
+  'iaajmlceplecbljialhhkmedjlpdblhp',
 ];
 
 async function download() {
