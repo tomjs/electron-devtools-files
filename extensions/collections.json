@@ -9,7 +9,7 @@
   {
     "id": "jdkknkkbebbapilgoeccciglkfbmbnfm",
     "name": "Apollo Client Devtools",
-    "version": "4.18.5",
+    "version": "4.18.9",
     "manifest_version": 3
   },
   {
@@ -42,26 +42,44 @@
   {
     "id": "lmhkpmbekcpmknklioeibfkpmmfibljd",
     "name": "Redux DevTools",
-    "version": "3.2.3",
+    "version": "3.2.7",
     "manifest_version": 3
   },
   {
     "id": "fmkadmapgofadopljbjfkapdkoienihi",
     "name": "React Developer Tools",
-    "version": "5.3.1",
+    "version": "6.0.1",
     "manifest_version": 3,
     "minimum_chrome_version": "102"
   },
   {
     "id": "nhdogjmejiglipccpnnnanhbledajbpd",
     "name": "Vue.js devtools",
-    "version": "6.6.3",
+    "version": "7.6.1",
     "manifest_version": 3
   },
   {
     "id": "ljjemllljcmogpfapbkkighbhhppjdbg",
     "name": "Vue.js devtools (beta)",
-    "version": "7.0.0.6",
+    "version": "7.0.0.12",
+    "manifest_version": 3
+  },
+  {
+    "id": "ilcajpmogmhpliinlbcdebhbcanbghmd",
+    "name": "Preact Developer Tools",
+    "version": "4.7.1",
+    "manifest_version": 2
+  },
+  {
+    "id": "hkddcnbhifppgmfgflgaelippbigjpjo",
+    "name": "Vue.js devtools (v5)",
+    "version": "5.3.4",
+    "manifest_version": 3
+  },
+  {
+    "id": "iaajmlceplecbljialhhkmedjlpdblhp",
+    "name": "Vue.js devtools",
+    "version": "6.6.4",
     "manifest_version": 3
   }
 ]
