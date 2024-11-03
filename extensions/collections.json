@@ -35,9 +35,9 @@
   {
     "id": "pfgnfdagidkfgccljigdamigbcnndkod",
     "name": "MobX Developer Tools",
-    "version": "0.9.26",
-    "manifest_version": 2,
-    "minimum_chrome_version": "44"
+    "version": "0.9.30",
+    "manifest_version": 3,
+    "minimum_chrome_version": "88"
   },
   {
     "id": "lmhkpmbekcpmknklioeibfkpmmfibljd",
