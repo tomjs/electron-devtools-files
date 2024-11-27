@@ -9,7 +9,7 @@
   {
     "id": "jdkknkkbebbapilgoeccciglkfbmbnfm",
     "name": "Apollo Client Devtools",
-    "version": "4.18.14",
+    "version": "4.18.15",
     "manifest_version": 3
   },
   {
@@ -55,7 +55,7 @@
   {
     "id": "nhdogjmejiglipccpnnnanhbledajbpd",
     "name": "Vue.js devtools",
-    "version": "7.6.4",
+    "version": "7.6.5",
     "manifest_version": 3
   },
   {
