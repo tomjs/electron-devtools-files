@@ -21,8 +21,6 @@ const extensionIds = [
   'bhljhndlimiafopmmhjlgfpnnchjjbhd',
   // Ember Inspector
   'bmdblncegkenkacieihfhpjfppoconhi',
-  // jQuery Debugger
-  'dbhhnnnpaeobfddmlalhnehgclcmjimi',
   // MobX Devtools
   'pfgnfdagidkfgccljigdamigbcnndkod',
   // Preact Developer Devtools
@@ -31,6 +29,10 @@ const extensionIds = [
   'fmkadmapgofadopljbjfkapdkoienihi',
   // Redux Devtools
   'lmhkpmbekcpmknklioeibfkpmmfibljd',
+  // Solid Devtools
+  'kmcfjchnmmaeeagadbhoofajiopoceel',
+  // Svelte DevTools
+  'kfidecgcdjjfpeckbblhmfkhmlgecoff',
   // Vue.js Devtools
   'nhdogjmejiglipccpnnnanhbledajbpd',
   // Vue.js Devtools (beta)
