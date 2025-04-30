@@ -44,7 +44,7 @@ const extensionIds = [
 ];
 
 async function download() {
-  const collections: IExtension[] = readJson(COLLECTION_PATH) || [];
+  const collections: IExtension[] = [];
 
   mkdirp(CACHE_PATH);
   if (fs.existsSync(COLLECTION_PATH)) {
@@ -60,19 +60,13 @@ async function download() {
     console.log(`downloaded ${id} to ${EXTENSION_PATH}, time: ${Date.now() - start}ms`);
     const manifest = readJson(path.join(EXTENSION_PATH, id, 'manifest.json')) || {};
 
-    const item = collections.find(item => item.id === id);
-    const extension = {
+    collections.push({
       id,
       name: manifest.name,
       version: manifest.version,
       manifest_version: manifest.manifest_version,
       minimum_chrome_version: manifest.minimum_chrome_version,
-    };
-    if (item) {
-      Object.assign(item, extension);
-    } else {
-      collections.push(extension);
-    }
+    });
 
     fs.rmSync(path.join(EXTENSION_PATH, id), { recursive: true, force: true });
   }

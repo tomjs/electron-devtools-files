@@ -2,14 +2,14 @@
   {
     "id": "ienfalfjdbdpebioblfackkekamfmbnh",
     "name": "Angular DevTools",
-    "version": "1.0.18",
+    "version": "1.0.30",
     "manifest_version": 3,
     "minimum_chrome_version": "102"
   },
   {
     "id": "jdkknkkbebbapilgoeccciglkfbmbnfm",
     "name": "Apollo Client Devtools",
-    "version": "4.19.0",
+    "version": "4.19.13",
     "manifest_version": 3
   },
   {
@@ -33,22 +33,42 @@
     "minimum_chrome_version": "88"
   },
   {
-    "id": "lmhkpmbekcpmknklioeibfkpmmfibljd",
-    "name": "Redux DevTools",
-    "version": "3.2.7",
+    "id": "ilcajpmogmhpliinlbcdebhbcanbghmd",
+    "name": "Preact Developer Tools",
+    "version": "5.0.1",
     "manifest_version": 3
   },
   {
     "id": "fmkadmapgofadopljbjfkapdkoienihi",
     "name": "React Developer Tools",
-    "version": "6.0.1",
+    "version": "6.1.1",
     "manifest_version": 3,
     "minimum_chrome_version": "102"
   },
   {
+    "id": "lmhkpmbekcpmknklioeibfkpmmfibljd",
+    "name": "Redux DevTools",
+    "version": "3.2.10",
+    "manifest_version": 3
+  },
+  {
+    "id": "kmcfjchnmmaeeagadbhoofajiopoceel",
+    "name": "Solid Devtools",
+    "version": "0.33.2.0",
+    "manifest_version": 3,
+    "minimum_chrome_version": "94"
+  },
+  {
+    "id": "kfidecgcdjjfpeckbblhmfkhmlgecoff",
+    "name": "Svelte DevTools",
+    "version": "2.2.2",
+    "manifest_version": 3,
+    "minimum_chrome_version": "121"
+  },
+  {
     "id": "nhdogjmejiglipccpnnnanhbledajbpd",
     "name": "Vue.js devtools",
-    "version": "7.6.8",
+    "version": "7.7.6",
     "manifest_version": 3
   },
   {
@@ -56,12 +76,6 @@
     "name": "Vue.js devtools (beta)",
     "version": "7.0.0.12",
     "manifest_version": 3
-  },
-  {
-    "id": "ilcajpmogmhpliinlbcdebhbcanbghmd",
-    "name": "Preact Developer Tools",
-    "version": "4.7.1",
-    "manifest_version": 2
   },
   {
     "id": "hkddcnbhifppgmfgflgaelippbigjpjo",
