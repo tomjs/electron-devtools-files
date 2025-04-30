@@ -97,7 +97,7 @@ export async function downloadChromeExtension(
   const extensionFolder = path.join(outPath, extensionId);
 
   return new Promise((resolve, reject) => {
-    const fileUrl = `https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&x=id%3D${extensionId}%26uc&prodversion=32`;
+    const fileUrl = `https://clients2.google.com/service/update2/crx?response=redirect&prodversion=135.0.0.0&x=id%3D${extensionId}%26installsource%3Dondemand%26uc&nacl_arch=x86-64&acceptformat=crx2,crx3`;
     const filePath = path.resolve(`${extensionFolder}.crx`);
 
     if (fs.existsSync(filePath) && !opts.force) {
@@ -110,6 +110,7 @@ export async function downloadChromeExtension(
         : undefined,
     })
       .then(binary => {
+        // @ts-ignore
         fs.writeFileSync(filePath, binary);
 
         if (!opts.unzip) {
