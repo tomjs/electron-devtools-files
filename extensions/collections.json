@@ -2,7 +2,7 @@
   {
     "id": "ienfalfjdbdpebioblfackkekamfmbnh",
     "name": "Angular DevTools",
-    "version": "1.0.31",
+    "version": "1.0.32",
     "manifest_version": 3,
     "minimum_chrome_version": "102"
   },
