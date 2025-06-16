@@ -54,7 +54,7 @@
   {
     "id": "kmcfjchnmmaeeagadbhoofajiopoceel",
     "name": "Solid Devtools",
-    "version": "0.33.2.0",
+    "version": "0.33.3.0",
     "manifest_version": 3,
     "minimum_chrome_version": "94"
   },
