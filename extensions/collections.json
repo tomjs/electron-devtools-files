@@ -2,14 +2,14 @@
   {
     "id": "ienfalfjdbdpebioblfackkekamfmbnh",
     "name": "Angular DevTools",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "manifest_version": 3,
     "minimum_chrome_version": "102"
   },
   {
     "id": "jdkknkkbebbapilgoeccciglkfbmbnfm",
     "name": "Apollo Client Devtools",
-    "version": "4.21.3",
+    "version": "4.21.4",
     "manifest_version": 3
   },
   {
