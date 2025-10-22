@@ -41,7 +41,7 @@
   {
     "id": "fmkadmapgofadopljbjfkapdkoienihi",
     "name": "React Developer Tools",
-    "version": "7.0.0",
+    "version": "7.0.1",
     "manifest_version": 3,
     "minimum_chrome_version": "114"
   },
