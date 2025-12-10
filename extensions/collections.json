@@ -2,14 +2,14 @@
   {
     "id": "ienfalfjdbdpebioblfackkekamfmbnh",
     "name": "Angular DevTools",
-    "version": "1.6.0",
+    "version": "1.6.2",
     "manifest_version": 3,
     "minimum_chrome_version": "102"
   },
   {
     "id": "jdkknkkbebbapilgoeccciglkfbmbnfm",
     "name": "Apollo Client Devtools",
-    "version": "4.21.10",
+    "version": "4.22.3",
     "manifest_version": 3
   },
   {
@@ -22,7 +22,7 @@
   {
     "id": "bmdblncegkenkacieihfhpjfppoconhi",
     "name": "Ember Inspector",
-    "version": "4.14.2",
+    "version": "4.15.0",
     "manifest_version": 3
   },
   {
